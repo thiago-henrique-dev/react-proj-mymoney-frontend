@@ -4,4 +4,3 @@ import App from "./main/app"
 
 ReactDOM.render(<App/>, document.getElementById('app'))
 
-s
