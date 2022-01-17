@@ -1,4 +1,6 @@
 import { combineReducers } from "redux";
+import DashboardReducers from "../dashboard/dashboardReducers";
+
 
 //REDUCERS
 //vai ser justamente o resultado da combinação de todos os reducers da minha aplicação
@@ -7,7 +9,7 @@ import { combineReducers } from "redux";
 
 
 const rootReducer = combineReducers({
-      dashboard: () => ({sumary: { credit: 100, debt: 50}})
+      dashboard: DashboardReducers
 })
 
 export default rootReducer
