@@ -1,6 +1,5 @@
 import { combineReducers } from "redux";
-import DashboardReducers from "../dashboard/dashboardReducers";
-
+import DashboardReducers from "../dashboard/dashboardReducer";
 
 //REDUCERS
 //vai ser justamente o resultado da combinação de todos os reducers da minha aplicação
