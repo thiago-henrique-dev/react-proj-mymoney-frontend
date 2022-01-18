@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import DashboardReducers from "../dashboard/dashboardReducer";
+import TabReducer from "../common/table/tabReducer";
 
 //REDUCERS
 //vai ser justamente o resultado da combinação de todos os reducers da minha aplicação
@@ -8,7 +9,8 @@ import DashboardReducers from "../dashboard/dashboardReducer";
 
 
 const rootReducer = combineReducers({
-      dashboard: DashboardReducers
+      dashboard: DashboardReducers,
+      tab: TabReducer
 })
 
 export default rootReducer
