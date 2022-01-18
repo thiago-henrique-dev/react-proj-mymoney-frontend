@@ -7,4 +7,4 @@ export default props => (
     </ul>
 )
 
-// FUNÇÃO -- AGRUPAR TODOS OS CABEÇALHOS DAS MINHAS ABAS
+// FUNÇÃO -- AGRUPAR TODOS OS CABEÇALHOS das minhas table
