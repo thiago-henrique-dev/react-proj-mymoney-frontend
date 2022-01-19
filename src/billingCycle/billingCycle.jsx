@@ -64,8 +64,6 @@ class BillingCycle extends Component {
 
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-        selectTab, 
-        showTabs,
         create,
         update,
         remove,
