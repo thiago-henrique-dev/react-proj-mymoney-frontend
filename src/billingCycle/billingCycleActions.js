@@ -5,7 +5,7 @@ import { showTabs, selectTab} from  '../common/table/tabActions'
 import { initialize } from "redux-form";
 
 const BASE_URL = 'http://localhost:3003/api'
-const INITIAL_VALUES = {}
+const INITIAL_VALUES = {credits: [{}]}
 
 
 
