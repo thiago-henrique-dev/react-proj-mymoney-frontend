@@ -10,7 +10,7 @@ class BillingCycleForm extends Component {
     render(){
 
         const { handleSubmit, readOnly } = this.props 
-        console.log(handleSubmit)
+        
 
         return (
             <form role='form' onSubmit={handleSubmit}>
@@ -21,7 +21,7 @@ class BillingCycleForm extends Component {
                         label="Mês" cols="12 4" placeholder="Informe o mês"/>
                     <Field name='year' component={LableAndInput} type="number" readOnly={readOnly}
                         label="Ano" cols="12 4" placeholder="Informe o ano"/>
-                    <CreditList cols='12 6'/>
+                    <CreditList cols='12 6' readOnly={readOnly} />
                 </div>
                 <div className='box-footers'>
                     <button type='submit' className={`btn btn-${this.props.submitClass}`}>
