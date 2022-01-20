@@ -4,6 +4,7 @@ import DashboardReducers from "../dashboard/dashboardReducer";
 import { reducer as toastrReducer } from 'react-redux-toastr'
 import TabReducer from "../common/table/tabReducer";
 import BillingCycleReducer from "../billingCycle/billingCycleReducer";
+import AuthReducer from "../auth/authReducer";
 
 //REDUCERS
 //vai ser justamente o resultado da combinação de todos os reducers da minha aplicação
@@ -16,7 +17,8 @@ const rootReducer = combineReducers({
       tab: TabReducer,
       billingCycle: BillingCycleReducer,
       form: formReducer,
-      toastr: toastrReducer
+      toastr: toastrReducer,
+      auth: AuthReducer
 })
 
 export default rootReducer

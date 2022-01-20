@@ -3,7 +3,6 @@ import { toastr } from "react-redux-toastr";
 import { getFormValues, reset as resetForm } from 'redux-form'
 import { showTabs, selectTab} from  '../common/table/tabActions'
 import { initialize } from "redux-form";
-import If from '../common/operador/If'
 
 const BASE_URL = 'http://localhost:3003/api'
 const INITIAL_VALUES = {credits: [{}], debts: [{}]}
@@ -40,7 +39,7 @@ function submit(values, method){
             dispatch(init())
         })
         .catch(e => {
-            e.response.data.errors.forEach(error => toastr.error('Erro', error))
+            e.response.data.errors.forEach(error => toastr.error('Error', error))
         })
 }
 
